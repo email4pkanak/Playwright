@@ -16,7 +16,7 @@ pipeline {
       steps {
         script {
           // Install the dependencies defined in package.json
-          sh """
+          bat """
             npm install
             npx playwright install --with-deps
           """
@@ -27,7 +27,7 @@ pipeline {
       steps {
         script {
           // Run the Playwright tests using npx
-          sh 'npx playwright test'
+          bat 'npx playwright test'
         }
       }
     }
