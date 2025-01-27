@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     // Define NodeJS installation name as configured in Jenkins Global Tool Configuration
-    NODE_HOME = tool name: 'NodeJS', type: 'NodeJSInstallation'
+    NODE_HOME = tool name: 'NodeJS', type: 'NodeJS installations'
   }
   stages {
     stage('Checkout') {
