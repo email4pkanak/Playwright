@@ -35,6 +35,8 @@ test('login test', async()=>{
     //verifying the actual title matches the expected one
     expect(pageTitle).toEqual('Account Login');
 
+    await page.waitForTimeout(5000);
+
     //to close the browser
     await browser.close();
 
