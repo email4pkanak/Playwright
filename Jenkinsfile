@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         // Checkout the code from Git repository
-        git branch: 'main', url: 'https://github.com/email4pkanak/Playwright.git'
+        git branch: 'master', url: 'https://github.com/email4pkanak/Playwright.git'
       }
     }
     stage('Install Dependencies') {
